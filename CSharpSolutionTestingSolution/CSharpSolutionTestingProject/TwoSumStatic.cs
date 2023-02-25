@@ -22,7 +22,12 @@ namespace CSharpSolutionTestingProject
     /// </summary>
     internal class TwoSumStatic
     {
-        //Brute force solution for TwoSum problem
+        /// <summary>
+        /// Brute force solution for TwoSum problem
+        /// </summary>
+        /// <param name="nums">input array to search</param>
+        /// <param name="target">input target sum</param>
+        /// <returns>array of indices within nums array containing integer sum equal to target</returns>
         public static int[] TwoSumBruteForce(int[] nums, int target)
         {
             int i, j; //loop variables
@@ -42,13 +47,20 @@ namespace CSharpSolutionTestingProject
             }
 
             return new int[] { 0, 0 };
-        }
+        }//end TwoSumBruteForce()
 
-        //More efficient solution for TwoSum problem (might not be the best)
+        /// <summary>
+        /// More efficient solution for TwoSum problem (might not be the best)
+        /// </summary>
+        /// <param name="nums">input array to search</param>
+        /// <param name="target">input target sum</param>
+        /// <returns>array of indices within nums array containing integer sum equal to target</returns>
         public static int[] TwoSumEfficient(int[] nums, int target)
         {
-            return new int[] { 0, 0 };
-        }
 
-        }//end StaticTesting
+
+            return new int[] { 0, 0 };
+        }//end TwoSumEfficient()
+
+    }//end StaticTesting
 }
