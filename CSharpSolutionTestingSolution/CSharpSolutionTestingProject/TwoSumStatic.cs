@@ -1,6 +1,6 @@
 ﻿///////////////////////////////////////////////////////////////////////////////////////
 //
-//  Solution/Project:   CSharpSolutionTestingProjectSolution/CSharpSolutionTestingProject
+//  Solution/Project:   LeetCodeSolution/LeetCodeProject
 //  File Name:          TwoSumStatic.cs
 //  Description:        TwoSumStatic class for testing solutions to the TwoSum problem
 //  Authors:            Bobby Mullins
@@ -18,7 +18,7 @@ using System.Threading.Tasks;
 namespace CSharpSolutionTestingProject
 {
     /// <summary>
-    ///  Class for testing static methods and functions
+    ///  Class for Two Sum problem methods
     /// </summary>
     internal class TwoSumStatic
     {
@@ -63,23 +63,24 @@ namespace CSharpSolutionTestingProject
         /// <returns>array of indices within nums array containing integer sum equal to target</returns>
         public static int[] TwoSumEfficient(int[] nums, int target)
         {
+            //Variables
             int i; //loop variable
-            Dictionary<int, int> dict = new Dictionary<int, int>(); //dictionary (hashmap equivalent)
+            Dictionary<int, int> dict = new(); //dictionary (hashmap equivalent)
 
             //loop through array only one time using dictionary
             for (i = 0; i < nums.Length; i++)
             {
-                int indiceOne = nums[i];
-                int indiceTwo = target - indiceOne;
+                int indiceOneVal = nums[i];
+                int indiceTwoVal = target - indiceOneVal;
 
                 //Check if equal to target
-                if (dict.TryGetValue(indiceTwo, out int index))
+                if (dict.TryGetValue(indiceTwoVal, out int index))
                 {
                     //returns indices if two separate indices to equal target are found
                     return new[] { index, i };
                 }
 
-                dict[indiceOne] = i;
+                dict[indiceOneVal] = i;
             }
 
             //Will only return this if two separate indices equaling target are not found
@@ -87,5 +88,5 @@ namespace CSharpSolutionTestingProject
 
         }//end TwoSumEfficient()
 
-    }//end StaticTesting
+    }//end TwoSumStatic
 }

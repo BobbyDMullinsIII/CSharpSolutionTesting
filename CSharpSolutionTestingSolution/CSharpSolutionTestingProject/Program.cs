@@ -1,6 +1,6 @@
 ﻿/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//  Solution/Project:   CSharpSolutionTestingProjectSolution/CSharpSolutionTestingProject
+//  Solution/Project:   LeetCodeSolution/LeetCodeProject
 //  File Name:          Driver.cs
 //  Description:        Main driver for program
 //  Authors:            Bobby Mullins
@@ -24,23 +24,35 @@ namespace CSharpSolutionTestingProject
         [STAThread]
         static void Main()
         {
-            TestTwoSum();
+            //RunTwoSum();
+
         }
 
-        //Method for testing TwoSum solution
-        public static void TestTwoSum()
+        //Method for running TwoSum solution
+        public static void RunTwoSum()
         {
             //Main variables
             int[] nums = new int[] { 2, 7, 11, 15 };
             int target = 9;
+            int[] returnArray;
 
-            int[] returnArray = TwoSumStatic.TwoSumBruteForce(nums, target); //Brute force method
-            //More efficient method
+            //returnArray = TwoSumStatic.TwoSumBruteForce(nums, target); //Brute force method
+            returnArray = TwoSumStatic.TwoSumEfficient(nums, target); //More efficient method
 
 
             //Solution printed out to console
             returnArray.ToList().ForEach(i => Console.WriteLine(i.ToString()));
-        }
+
+        }//end RunTwoSum()
+
+        //Method for running MedianTwoSortedArrays solution
+        public static void RunMedianTwoSortedArrays()
+        {
+            int[] nums1 = new int[] { };
+            int[] nums2 = new int[] { };
+            double median;
+
+        }//end RunMedianTwoSortedArrays()
 
     }//end Driver class
 
