@@ -25,7 +25,7 @@ namespace CSharpSolutionTestingProject
         static void Main()
         {
             //RunTwoSum();
-
+            RunMedianTwoSortedArrays();
         }
 
         //Method for running TwoSum solution
@@ -36,9 +36,9 @@ namespace CSharpSolutionTestingProject
             int target = 9;
             int[] returnArray;
 
+            //Execute Solution
             //returnArray = TwoSumStatic.TwoSumBruteForce(nums, target); //Brute force method
             returnArray = TwoSumStatic.TwoSumEfficient(nums, target); //More efficient method
-
 
             //Solution printed out to console
             returnArray.ToList().ForEach(i => Console.WriteLine(i.ToString()));
@@ -48,9 +48,16 @@ namespace CSharpSolutionTestingProject
         //Method for running MedianTwoSortedArrays solution
         public static void RunMedianTwoSortedArrays()
         {
-            int[] nums1 = new int[] { };
-            int[] nums2 = new int[] { };
+            //Main variables
+            int[] nums1 = new int[] { 1, 2 };
+            int[] nums2 = new int[] { 3, 4 };
             double median;
+
+            //Execute Solution
+            median = MedianTwoSortedArraysStatic.FindMedianSortedArrays(nums1, nums2);
+
+            //Solution printed out to console
+            Console.WriteLine(median);
 
         }//end RunMedianTwoSortedArrays()
 

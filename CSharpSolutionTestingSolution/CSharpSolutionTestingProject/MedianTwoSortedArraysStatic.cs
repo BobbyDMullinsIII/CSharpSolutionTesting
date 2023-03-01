@@ -33,13 +33,33 @@ namespace CSharpSolutionTestingProject
             //Variables
             double median;
             int[] mergedArray;
+            int arrayLength;
+            bool oddLength = false;
 
-            //Merge arrays and sort merged array
+            //Merge arrays, sort merged array, and store length in variable
             mergedArray = nums1.Concat(nums2).ToArray();
             Array.Sort(mergedArray);
+            arrayLength = mergedArray.Length;
 
+            //Makes oddLength variable true if array is calculated to be odd in length
+            if(arrayLength % 2 != 0)
+            {
+                oddLength = true;
+            }
 
+            //Different calculations for odd or even length
+            if (oddLength == true)
+            {
+                //Calculation for odd length
+                median = mergedArray[(arrayLength + 1) / 2 - 1];
+            }
+            else
+            {
+                //Calculation for even length
+                median = (mergedArray[arrayLength / 2 - 1] + mergedArray[arrayLength / 2]) / 2.0d;
+            }
 
+            //Return calculated median of merged array
             return median;
 
         }//end FindMedianSortedArrays()
