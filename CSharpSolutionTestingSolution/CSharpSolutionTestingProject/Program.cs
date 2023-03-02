@@ -9,6 +9,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+using LeetCodeProject;
 using System;
 
 namespace CSharpSolutionTestingProject
@@ -25,7 +26,8 @@ namespace CSharpSolutionTestingProject
         static void Main()
         {
             //RunTwoSum();
-            RunMedianTwoSortedArrays();
+            //RunMedianTwoSortedArrays();
+            RunReverseInteger();
         }
 
         //Method for running TwoSum solution
@@ -36,7 +38,7 @@ namespace CSharpSolutionTestingProject
             int target = 9;
             int[] returnArray;
 
-            //Execute Solution
+            //Execute solution
             //returnArray = TwoSumStatic.TwoSumBruteForce(nums, target); //Brute force method
             returnArray = TwoSumStatic.TwoSumEfficient(nums, target); //More efficient method
 
@@ -53,13 +55,28 @@ namespace CSharpSolutionTestingProject
             int[] nums2 = new int[] { 3, 4 };
             double median;
 
-            //Execute Solution
+            //Execute solution
             median = MedianTwoSortedArraysStatic.FindMedianSortedArrays(nums1, nums2);
 
             //Solution printed out to console
             Console.WriteLine(median);
 
         }//end RunMedianTwoSortedArrays()
+
+        //Method for running MedianTwoSortedArrays solution
+        public static void RunReverseInteger()
+        {
+            //Main variables
+            int x = 123;
+            int reversedNumber;
+
+            //Execute Solution
+            reversedNumber = Reverse32BitIntegerStatic.Reverse(x);
+
+            //Solution printed out to console
+            Console.WriteLine(reversedNumber);
+
+        }//end RunReverseInteger()
 
     }//end Driver class
 

@@ -4,7 +4,7 @@
 //  File Name:          MedianTwoSortedArraysStatic.cs
 //  Description:        MedianTwoSortedArraysStatic class for testing solutions to the Median of Two Sorted Arrays problem
 //  Authors:            Bobby Mullins
-//  Created:            Friday, February 25, 2023 | (2023-02-10)
+//  Created:            Friday, February 25, 2023 | (2023-02-25)
 //  Copyright:          N/A
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -56,7 +56,8 @@ namespace CSharpSolutionTestingProject
             else
             {
                 //Calculation for even length
-                median = (mergedArray[arrayLength / 2 - 1] + mergedArray[arrayLength / 2]) / 2.0d;
+                int tempNum = mergedArray[arrayLength / 2 - 1] + mergedArray[arrayLength / 2];
+                median = tempNum / 2.0d;
             }
 
             //Return calculated median of merged array
