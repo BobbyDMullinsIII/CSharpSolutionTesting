@@ -4,7 +4,7 @@
 //  File Name:          Reverse32BitIntegerStatic.cs
 //  Description:        Reverse32BitIntegerStatic class for testing solutions to the Reverse Integer class problem
 //  Authors:            Bobby Mullins
-//  Created:            Friday, March 1, 2023 | (2023-03-01)
+//  Created:            Wednesday, March 1, 2023 | (2023-03-01)
 //  Copyright:          N/A
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -30,27 +30,23 @@ namespace LeetCodeProject
         public static int Reverse(int x)
         {
             //Variables
-            string strNum = x.ToString();
+            char[] charArray = x.ToString().ToCharArray();
 
             //If x is a positive number
             if (x >= 0)
             {
-                char[] charArray = strNum.ToCharArray(); //Convert string to char array
-                Array.Reverse(charArray);                //Reverse number characters
-                strNum = new string(charArray);          //Convert back to string
+                Array.Reverse(charArray); //Reverse number characters
             }
             //If x is a negative number
             else
             {
-                strNum = strNum[1..];                    //Removes negative sign (first char) for the time being
-                char[] charArray = strNum.ToCharArray(); //Convert string to char array
-                Array.Reverse(charArray);                //Reverse number characters
-                strNum = new string(charArray);          //Convert back to string
-                strNum = strNum.Insert(0, "-");          //Adds negative sign back into string number
+                charArray = charArray[1..];        //Removes negative sign (first char) for the time being
+                Array.Reverse(charArray);          //Reverse number characters
+                charArray = String.Insert(0, "-"); //Adds negative sign back into string number
             }
 
             //Return calculated reversed 32-bit integer, return 0 if overflow or underflow occurs
-            if (int.TryParse(strNum, out int reverseInt) == true)
+            if (int.TryParse(charArray, out int reverseInt) == true)
             {
                 return reverseInt;
             }
