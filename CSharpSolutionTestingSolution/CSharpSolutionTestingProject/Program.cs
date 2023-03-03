@@ -71,7 +71,8 @@ namespace CSharpSolutionTestingProject
             int reversedNumber;
 
             //Execute Solution
-            reversedNumber = Reverse32BitIntegerStatic.Reverse(x);
+            //reversedNumber = Reverse32BitIntegerStatic.ReverseSimple(x); //Simpler solutioin
+            reversedNumber = Reverse32BitIntegerStatic.ReverseFasterSmaller(x);//Slightly faster and more space efficient solution
 
             //Solution printed out to console
             Console.WriteLine(reversedNumber);
