@@ -10,6 +10,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,31 +31,32 @@ namespace LeetCodeProject
         public static int Reverse(int x)
         {
             //Variables
-            char[] charArray = x.ToString().ToCharArray();
+            List<char> charList = new();
+            charList.AddRange(x.ToString());
 
-            //If x is a positive number
-            if (x >= 0)
+            //Removes negative sign (first char) for the time being if number is negative
+            if (x < 0)
             {
-                Array.Reverse(charArray); //Reverse number characters
-
-                if (int.TryParse(charArray, out int reverseInt) == true)
-                {
-                    return reverseInt;
-                }
+                charList.RemoveAt(0);
             }
-            //If x is a negative number
+
+            charList.Reverse(); //Reverse number
+
+            //Adds negative sign back in if number ws negative
+            if (x < 0)
+            {
+                charList.Insert(0, '-');
+            }
+
+            //Check if number is valid and did not overflow or underflow
+            if (int.TryParse(String.Concat(charList), out int reverseInt) == true)
+            {
+                return reverseInt;
+            }
             else
             {
-                charArray = charArray[1..]; //Removes negative sign (first char) for the time being
-                Array.Reverse(charArray);   //Reverse number characters
-
-                if (int.TryParse(charArray, out int reverseInt) == true)
-                {
-                    return reverseInt * -1; //Adds negative sign to number for negative
-                }
+                return 0; //Returns 0 if underflow or overflow occurredx
             }
-
-            return 0; //Will only reach here if overflow or underflow happens with 32-bit integer
 
         }//end Reverse()
 
