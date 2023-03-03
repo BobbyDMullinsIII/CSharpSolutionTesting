@@ -36,24 +36,25 @@ namespace LeetCodeProject
             if (x >= 0)
             {
                 Array.Reverse(charArray); //Reverse number characters
+
+                if (int.TryParse(charArray, out int reverseInt) == true)
+                {
+                    return reverseInt;
+                }
             }
             //If x is a negative number
             else
             {
-                charArray = charArray[1..];        //Removes negative sign (first char) for the time being
-                Array.Reverse(charArray);          //Reverse number characters
-                charArray = String.Insert(0, "-"); //Adds negative sign back into string number
+                charArray = charArray[1..]; //Removes negative sign (first char) for the time being
+                Array.Reverse(charArray);   //Reverse number characters
+
+                if (int.TryParse(charArray, out int reverseInt) == true)
+                {
+                    return reverseInt * -1; //Adds negative sign to number for negative
+                }
             }
 
-            //Return calculated reversed 32-bit integer, return 0 if overflow or underflow occurs
-            if (int.TryParse(charArray, out int reverseInt) == true)
-            {
-                return reverseInt;
-            }
-            else
-            {
-                return 0;
-            }
+            return 0; //Will only reach here if overflow or underflow happens with 32-bit integer
 
         }//end Reverse()
 
