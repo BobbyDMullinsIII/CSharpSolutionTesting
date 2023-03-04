@@ -20,7 +20,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Add Two Numbers problem methods
     /// </summary>
-    internal class AddTwoNumbersStatic
+    internal static class AddTwoNumbersStatic
     {
         /// <summary>
         /// Solution for AddTwoNumbers problem
@@ -40,9 +40,9 @@ namespace LeetCodeProject
 
         }//end AddTwoNumbers
 
-    }//end AddTwoNumbersStatic
+    }//end AddTwoNumbersStatic class
 
-    //Definition for singly-linked list.(Provided by LeetCode)
+    //Definition for singly-linked list. (Provided by LeetCode)
     public class ListNode
     {
         public int val;

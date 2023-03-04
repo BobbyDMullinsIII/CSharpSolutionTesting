@@ -88,5 +88,5 @@ namespace CSharpSolutionTestingProject
 
         }//end TwoSumEfficient()
 
-    }//end TwoSumStatic
+    }//end TwoSumStatic class
 }

@@ -21,7 +21,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Reverse Integer problem methods
     /// </summary>
-    internal class Reverse32BitIntegerStatic
+    internal static class Reverse32BitIntegerStatic
     {
         /// <summary>
         /// Simple solution for Reverse Integer problem
@@ -98,5 +98,5 @@ namespace LeetCodeProject
             }
         }
 
-    }//end Reverse32BitIntegerStatic
+    }//end Reverse32BitIntegerStatic class
 }

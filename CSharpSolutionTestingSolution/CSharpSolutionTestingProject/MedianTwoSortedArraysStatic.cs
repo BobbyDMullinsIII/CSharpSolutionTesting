@@ -65,5 +65,5 @@ namespace CSharpSolutionTestingProject
 
         }//end FindMedianSortedArrays()
 
-    }//end MedianTwoSortedArraysStatic
+    }//end MedianTwoSortedArraysStatic class
 }

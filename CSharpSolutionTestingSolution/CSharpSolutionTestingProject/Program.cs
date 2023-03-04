@@ -27,7 +27,8 @@ namespace CSharpSolutionTestingProject
         {
             //RunTwoSum();
             //RunMedianTwoSortedArrays();
-            RunReverseInteger();
+            //RunReverseInteger();
+            RunMyAtoi();
         }
 
         //Method for running TwoSum solution
@@ -78,6 +79,20 @@ namespace CSharpSolutionTestingProject
             Console.WriteLine(reversedNumber);
 
         }//end RunReverseInteger()
+
+        //Method for running my atoi
+        public static void RunMyAtoi()
+        {
+            //Main variables
+            string s = "4193 with words";
+            int newInt;
+
+            //Execute Solution
+            newInt = StringToIntegerAtoiStatic.MyAtoi(s);
+
+            //Solution printed out to console
+            Console.WriteLine(newInt);
+        }
 
     }//end Driver class
 
