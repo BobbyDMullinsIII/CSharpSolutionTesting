@@ -28,7 +28,8 @@ namespace CSharpSolutionTestingProject
             //RunTwoSum();
             //RunMedianTwoSortedArrays();
             //RunReverseInteger();
-            RunMyAtoi();
+            //RunMyAtoi();
+            RunPalindrome();
         }
 
         //Method for running TwoSum solution
@@ -37,11 +38,10 @@ namespace CSharpSolutionTestingProject
             //Main variables
             int[] nums = new int[] { 2, 7, 11, 15 };
             int target = 9;
-            int[] returnArray;
 
             //Execute solution
-            //returnArray = TwoSumStatic.TwoSumBruteForce(nums, target); //Brute force method
-            returnArray = TwoSumStatic.TwoSumEfficient(nums, target); //More efficient method
+            //int[] returnArray = TwoSumStatic.TwoSumBruteForce(nums, target); //Brute force method
+            int[] returnArray = TwoSumStatic.TwoSumEfficient(nums, target); //More efficient method
 
             //Solution printed out to console
             returnArray.ToList().ForEach(i => Console.WriteLine(i.ToString()));
@@ -54,10 +54,9 @@ namespace CSharpSolutionTestingProject
             //Main variables
             int[] nums1 = new int[] { 1, 2 };
             int[] nums2 = new int[] { 3, 4 };
-            double median;
 
             //Execute solution
-            median = MedianTwoSortedArraysStatic.FindMedianSortedArrays(nums1, nums2);
+            double median = MedianTwoSortedArraysStatic.FindMedianSortedArrays(nums1, nums2);
 
             //Solution printed out to console
             Console.WriteLine(median);
@@ -69,11 +68,10 @@ namespace CSharpSolutionTestingProject
         {
             //Main variables
             int x = 123;
-            int reversedNumber;
 
             //Execute Solution
             //reversedNumber = Reverse32BitIntegerStatic.ReverseSimple(x); //Simpler solutioin
-            reversedNumber = Reverse32BitIntegerStatic.ReverseFasterSmaller(x);//Slightly faster and more space efficient solution
+            int reversedNumber = Reverse32BitIntegerStatic.ReverseFasterSmaller(x);//Slightly faster and more space efficient solution
 
             //Solution printed out to console
             Console.WriteLine(reversedNumber);
@@ -85,14 +83,28 @@ namespace CSharpSolutionTestingProject
         {
             //Main variables
             string s = "4193 with words";
-            int newInt;
 
             //Execute Solution
-            newInt = StringToIntegerAtoiStatic.MyAtoi(s);
+            int newInt = StringToIntegerAtoiStatic.MyAtoi(s);
 
             //Solution printed out to console
             Console.WriteLine(newInt);
-        }
+
+        }//end RunMyAtoi()
+
+        //Method for running my atoi
+        public static void RunPalindrome()
+        {
+            //Main variables
+            int x = 121;
+
+            //Execute Solution
+            bool isPalindrome = PalindromeNumber.IsPalindrome(x);
+
+            //Solution printed out to console
+            Console.WriteLine(isPalindrome);
+
+        }//end RunPalindrome()
 
     }//end Driver class
 

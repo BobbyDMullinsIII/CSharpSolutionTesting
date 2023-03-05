@@ -55,7 +55,7 @@ namespace LeetCodeProject
             }
             else
             {
-                return 0; //Returns 0 if underflow or overflow occurredx
+                return 0; //Returns 0 if underflow or overflow occurred
             }
 
         }//end ReverseSimple()
