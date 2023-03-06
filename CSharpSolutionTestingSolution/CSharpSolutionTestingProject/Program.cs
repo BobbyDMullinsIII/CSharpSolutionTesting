@@ -25,13 +25,10 @@ namespace CSharpSolutionTestingProject
         [STAThread]
         static void Main()
         {
-            //RunTwoSum();
-            //RunMedianTwoSortedArrays();
-            //RunReverseInteger();
-            //RunMyAtoi();
             RunPalindrome();
         }
 
+        //Problem 1
         //Method for running TwoSum solution
         public static void RunTwoSum()
         {
@@ -48,6 +45,7 @@ namespace CSharpSolutionTestingProject
 
         }//end RunTwoSum()
 
+        //Problem 4
         //Method for running MedianTwoSortedArrays solution
         public static void RunMedianTwoSortedArrays()
         {
@@ -63,6 +61,7 @@ namespace CSharpSolutionTestingProject
 
         }//end RunMedianTwoSortedArrays()
 
+        //Problem 7
         //Method for running MedianTwoSortedArrays solution
         public static void RunReverseInteger()
         {
@@ -78,6 +77,7 @@ namespace CSharpSolutionTestingProject
 
         }//end RunReverseInteger()
 
+        //Problem 8
         //Method for running my atoi
         public static void RunMyAtoi()
         {
@@ -92,6 +92,7 @@ namespace CSharpSolutionTestingProject
 
         }//end RunMyAtoi()
 
+        //Problem 9
         //Method for running my atoi
         public static void RunPalindrome()
         {
