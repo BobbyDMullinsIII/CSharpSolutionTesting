@@ -25,7 +25,7 @@ namespace CSharpSolutionTestingProject
         [STAThread]
         static void Main()
         {
-            RunPalindrome();
+            RunLengthOfLongestSubstring();
         }
 
         //Problem 1
@@ -44,6 +44,21 @@ namespace CSharpSolutionTestingProject
             returnArray.ToList().ForEach(i => Console.WriteLine(i.ToString()));
 
         }//end RunTwoSum()
+
+        //Problem 3
+        //Method for running LongestSubstringWithoutRepeat solution
+        public static void RunLengthOfLongestSubstring()
+        {
+            //Main variables
+            string s = "abcabcbb";
+
+            //Execute solution
+            int substrLength = LongestSubstringWithoutRepeatStatic.LengthOfLongestSubstring(s);
+
+            //Solution printed out to console
+            Console.WriteLine(substrLength);
+
+        }//end RunLengthOfLongestSubstring()
 
         //Problem 4
         //Method for running MedianTwoSortedArrays solution

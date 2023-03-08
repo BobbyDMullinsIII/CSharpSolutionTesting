@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace LeetCodeProject
 {
@@ -27,10 +28,41 @@ namespace LeetCodeProject
         /// </summary>
         /// <param name="s">input string to find subtring</param>
         /// <returns>length of the longest substring without repeating characters in 's' string</returns>
-        public int LengthOfLongestSubstring(string s)
+        public static int LengthOfLongestSubstring(string s)
         {
-            char checkChar; //Character to check against for duplicate characters
+            string checkStr = "";  //String to check against for duplicate characters
+            int substrLength = -1; //Length of largest substring without repeating characters
 
+            //Invalid Input Checks
+            //If string 's' is null or empty or has a length of 0, return 0
+            if (string.IsNullOrEmpty(s) == true || s.Length == 0)
+            { return 0; }
+
+            //If string 's' has a length of 1, return 1
+            if(s.Length == 1)
+            { return 1; }
+
+            //Go through each character in string 's'
+            for (int i = 0; i < s.Length ; i++)
+            {
+                //If a repeating character is found, reset checkStr
+                if (checkStr.Contains(s[i]) == true)
+                {
+                    checkStr = checkStr[(checkStr.IndexOf(s[i]) + 1)..];
+                }
+
+                //Add currently checked character in string to the checkStr
+                checkStr += s[i];
+
+                //If the current checkStr is larger than the stored substrLength, set substrLength to checkStr length
+                if (checkStr.Length > substrLength)
+                {
+                    substrLength = checkStr.Length;
+                }
+            }
+
+            //Return final max substring without repeating characters length
+            return substrLength;
 
         }//end LengthOfLongestSubstring()
 

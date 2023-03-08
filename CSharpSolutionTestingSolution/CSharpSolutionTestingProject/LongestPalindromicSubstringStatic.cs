@@ -27,9 +27,9 @@ namespace LeetCodeProject
         /// </summary>
         /// <param name="s">string to check for palindomic substring</param>
         /// <returns>longest palindromic substring within 's' string</returns>
-        public string LongestPalindrome(string s)
+        public static string LongestPalindrome(string s)
         {
-
+            return "";
         }//end LongestPalindrome()
 
     }//end LongestPalindromicSubstringStatic class

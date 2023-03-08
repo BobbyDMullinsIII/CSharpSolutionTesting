@@ -28,9 +28,9 @@ namespace LeetCodeProject
         /// <param name="s">string to convert</param>
         /// <param name="numRows">number of rows that zigzag pattern uses</param>
         /// <returns>string after zigzag conversion using 's' string with 'numRows' number of rows</returns>
-        public string Convert(string s, int numRows)
+        public static string Convert(string s, int numRows)
         {
-
+            return "";
         }//end Convert()
 
     }//end ZigzagConversionStatic() class

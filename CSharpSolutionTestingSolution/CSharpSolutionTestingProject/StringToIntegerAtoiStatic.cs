@@ -35,7 +35,7 @@ namespace LeetCodeProject
             //Removes all leading and trailing whitespace (even though constraints just use leading spaces as whitespace)
             s = s.Trim();
 
-            //Invalid Input Check
+            //Invalid Input Checks
             //If string is null or empty after removing all leading and/or trailing whitespace, return 0
             if(string.IsNullOrEmpty(s) == true)
             { return 0; }
