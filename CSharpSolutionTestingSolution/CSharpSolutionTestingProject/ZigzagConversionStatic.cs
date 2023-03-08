@@ -20,7 +20,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Zizzag Conversion problem methods
     /// </summary>
-    internal class ZigzagConversionStatic
+    internal static class ZigzagConversionStatic
     {
         /// <summary>
         /// Solution for Zigzag Conversion problem
