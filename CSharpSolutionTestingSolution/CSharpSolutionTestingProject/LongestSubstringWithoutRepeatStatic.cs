@@ -29,6 +29,8 @@ namespace LeetCodeProject
         /// <returns>length of the longest substring without repeating characters in 's' string</returns>
         public int LengthOfLongestSubstring(string s)
         {
+            char checkChar; //Character to check against for duplicate characters
+
 
         }//end LengthOfLongestSubstring()
 
