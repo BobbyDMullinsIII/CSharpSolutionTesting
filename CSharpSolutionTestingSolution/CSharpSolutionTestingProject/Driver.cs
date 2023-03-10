@@ -25,7 +25,7 @@ namespace CSharpSolutionTestingProject
         [STAThread]
         static void Main()
         {
-            RunLengthOfLongestSubstring();
+            RunZigzagConversion();
         }
 
         //Problem 1
@@ -75,6 +75,23 @@ namespace CSharpSolutionTestingProject
             Console.WriteLine(median);
 
         }//end RunMedianTwoSortedArrays()
+
+        //Problem 6
+        //Method for running ZigzagConversion solution
+
+        public static void RunZigzagConversion()
+        {
+            //Main variables
+            string s = "PAYPALISHIRING";
+            int numRows = 3;
+
+            //Execute solution
+            string converted = ZigzagConversionStatic.Convert(s, numRows);
+
+            //Solution printed out to console
+            Console.WriteLine(converted);
+
+        }//end RunZigzagConversion
 
         //Problem 7
         //Method for running MedianTwoSortedArrays solution

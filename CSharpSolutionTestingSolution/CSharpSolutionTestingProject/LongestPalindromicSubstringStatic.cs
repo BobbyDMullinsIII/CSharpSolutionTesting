@@ -29,7 +29,14 @@ namespace LeetCodeProject
         /// <returns>longest palindromic substring within 's' string</returns>
         public static string LongestPalindrome(string s)
         {
+            //If string is null or empty or only has one character, return itself
+            if (string.IsNullOrEmpty(s) == true || s.Length == 1)
+            { return s; }
+
+            
+
             return "";
+
         }//end LongestPalindrome()
 
     }//end LongestPalindromicSubstringStatic class
