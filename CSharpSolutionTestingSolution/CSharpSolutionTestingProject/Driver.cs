@@ -25,7 +25,7 @@ namespace CSharpSolutionTestingProject
         [STAThread]
         static void Main()
         {
-            RunZigzagConversion();
+            RunMaxAreaWater();
         }
 
         //Problem 1
@@ -35,10 +35,11 @@ namespace CSharpSolutionTestingProject
             //Main variables
             int[] nums = new int[] { 2, 7, 11, 15 };
             int target = 9;
+            int[] returnArray;
 
             //Execute solution
-            //int[] returnArray = TwoSumStatic.TwoSumBruteForce(nums, target); //Brute force method
-            int[] returnArray = TwoSumStatic.TwoSumEfficient(nums, target); //More efficient method
+            //returnArray = TwoSumStatic.TwoSumBruteForce(nums, target); //Brute force method
+            returnArray = TwoSumStatic.TwoSumEfficient(nums, target); //More efficient method
 
             //Solution printed out to console
             returnArray.ToList().ForEach(i => Console.WriteLine(i.ToString()));
@@ -51,9 +52,10 @@ namespace CSharpSolutionTestingProject
         {
             //Main variables
             string s = "abcabcbb";
+            int substrLength;
 
             //Execute solution
-            int substrLength = LongestSubstringWithoutRepeatStatic.LengthOfLongestSubstring(s);
+            substrLength = LongestSubstringWithoutRepeatStatic.LengthOfLongestSubstring(s);
 
             //Solution printed out to console
             Console.WriteLine(substrLength);
@@ -67,9 +69,10 @@ namespace CSharpSolutionTestingProject
             //Main variables
             int[] nums1 = new int[] { 1, 2 };
             int[] nums2 = new int[] { 3, 4 };
+            double median;
 
             //Execute solution
-            double median = MedianTwoSortedArraysStatic.FindMedianSortedArrays(nums1, nums2);
+            median = MedianTwoSortedArraysStatic.FindMedianSortedArrays(nums1, nums2);
 
             //Solution printed out to console
             Console.WriteLine(median);
@@ -84,9 +87,10 @@ namespace CSharpSolutionTestingProject
             //Main variables
             string s = "PAYPALISHIRING";
             int numRows = 3;
+            string converted;
 
             //Execute solution
-            string converted = ZigzagConversionStatic.Convert(s, numRows);
+            converted = ZigzagConversionStatic.Convert(s, numRows);
 
             //Solution printed out to console
             Console.WriteLine(converted);
@@ -99,10 +103,11 @@ namespace CSharpSolutionTestingProject
         {
             //Main variables
             int x = 123;
+            int reversedNumber;
 
             //Execute Solution
             //reversedNumber = Reverse32BitIntegerStatic.ReverseSimple(x); //Simpler solutioin
-            int reversedNumber = Reverse32BitIntegerStatic.ReverseFasterSmaller(x);//Slightly faster and more space efficient solution
+            reversedNumber = Reverse32BitIntegerStatic.ReverseFasterSmaller(x);//Slightly faster and more space efficient solution
 
             //Solution printed out to console
             Console.WriteLine(reversedNumber);
@@ -115,9 +120,10 @@ namespace CSharpSolutionTestingProject
         {
             //Main variables
             string s = "4193 with words";
+            int newInt;
 
             //Execute Solution
-            int newInt = StringToIntegerAtoiStatic.MyAtoi(s);
+            newInt = StringToIntegerAtoiStatic.MyAtoi(s);
 
             //Solution printed out to console
             Console.WriteLine(newInt);
@@ -130,14 +136,32 @@ namespace CSharpSolutionTestingProject
         {
             //Main variables
             int x = 121;
+            bool isPalindrome;
 
             //Execute Solution
-            bool isPalindrome = PalindromeNumber.IsPalindrome(x);
+            isPalindrome = PalindromeNumber.IsPalindrome(x);
 
             //Solution printed out to console
             Console.WriteLine(isPalindrome);
 
         }//end RunPalindrome()
+
+        //Problem 11
+        //Method for running my atoi
+        public static void RunMaxAreaWater()
+        {
+            //Main variables
+            int[] height = new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
+            int maxArea;
+
+            //Execute Solution
+            //maxArea = ContainerWithMostWaterStatic.MaxAreaBruteForce(height); //Brute force method
+            maxArea = ContainerWithMostWaterStatic.MaxAreaEfficient(height); //More efficient method
+
+            //Solution printed out to console
+            Console.WriteLine(maxArea);
+
+        }//end RunMaxAreaWater()
 
     }//end Driver class
 

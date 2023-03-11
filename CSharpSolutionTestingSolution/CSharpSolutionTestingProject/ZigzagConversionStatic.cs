@@ -1,8 +1,8 @@
 ﻿/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //  Solution/Project:   LeetCodeSolution/LeetCodeProject
-//  File Name:          LongestPalindromicSubstringStatic.cs
-//  Description:        LongestPalindromicSubstringStatic class for testing solutions to the Zigzag Conversion problem
+//  File Name:          ZigzagConversionStatic.cs
+//  Description:        ZigzagConversionStatic class for testing solutions to the Zigzag Conversion problem
 //  Authors:            Bobby Mullins
 //  Created:            Sunday, March 5 2023 | (2023-03-05)
 //  Copyright:          N/A
