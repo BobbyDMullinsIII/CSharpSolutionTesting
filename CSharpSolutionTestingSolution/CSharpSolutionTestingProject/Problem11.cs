@@ -23,7 +23,7 @@ namespace LeetCodeProject
     internal static class Problem11
     {
         /// <summary>
-        /// Brute force solution for Container With Most Water problem problem
+        /// Brute force solution for Container With Most Water problem
         /// </summary>
         /// <param name="height">integer array to determine what two points can hold the most water or area</param>
         /// <returns>largest area between two indexes that can "hold the most water" (or area)</returns>
@@ -57,7 +57,7 @@ namespace LeetCodeProject
         }//end MaxAreaBruteForce()
 
         /// <summary>
-        /// More efficient solution for Container With Most Water problem problem
+        /// More efficient solution for Container With Most Water problem
         /// </summary>
         /// <param name="height">integer array to determine what two points can hold the most water or area</param>
         /// <returns>largest area between two indexes that can "hold the most water" (or area)</returns>
