@@ -1,8 +1,8 @@
 ﻿/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //  Solution/Project:   LeetCodeSolution/LeetCodeProject
-//  File Name:          TwoSumStatic.cs
-//  Description:        TwoSumStatic class for testing solutions to the TwoSum problem
+//  File Name:          Problem1.cs
+//  Description:        Problem1 class for testing solutions to the TwoSum problem
 //  Authors:            Bobby Mullins
 //  Created:            Friday, February 10, 2023 | (2023-02-10)
 //  Copyright:          N/A
@@ -20,7 +20,7 @@ namespace CSharpSolutionTestingProject
     /// <summary>
     ///  Class for Two Sum problem methods
     /// </summary>
-    internal class TwoSumStatic
+    internal class Problem1
     {
         /// <summary>
         /// Brute force solution for TwoSum problem
@@ -88,5 +88,5 @@ namespace CSharpSolutionTestingProject
 
         }//end TwoSumEfficient()
 
-    }//end TwoSumStatic class
+    }//end Problem1 class
 }

@@ -1,8 +1,8 @@
 ﻿/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //  Solution/Project:   LeetCodeSolution/LeetCodeProject
-//  File Name:          StringToIntegerAtoiStatic.cs
-//  Description:        StringToIntegerAtoiStatic class for testing solutions to the String To Integer (Atoi) problem
+//  File Name:          Problem8.cs
+//  Description:        Problem8 class for testing solutions to the String To Integer (Atoi) problem
 //  Authors:            Bobby Mullins
 //  Created:            Friday, March 3, 2023 | (2023-03-03)
 //  Copyright:          N/A
@@ -20,7 +20,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for String To Integer (Atoi) problem methods
     /// </summary>
-    internal static class StringToIntegerAtoiStatic
+    internal static class Problem8
     {
         /// <summary>
         /// Solution for String To Integer (Atoi) problem
@@ -99,5 +99,5 @@ namespace LeetCodeProject
 
         }//end MyAtoi()
 
-    }//end StringToIntegerAtoiStatic class
+    }//end Problem8 class
 }

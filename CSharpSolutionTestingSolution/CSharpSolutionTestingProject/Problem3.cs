@@ -1,8 +1,8 @@
 ﻿/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //  Solution/Project:   LeetCodeSolution/LeetCodeProject
-//  File Name:          LongestSubstringWithoutRepeatStatic.cs
-//  Description:        LongestSubstringWithoutRepeatStatic class for testing solutions to the Longest Substring Without Repeating Characters problem
+//  File Name:          Problem3.cs
+//  Description:        Problem3 class for testing solutions to the Longest Substring Without Repeating Characters problem
 //  Authors:            Bobby Mullins
 //  Created:            Sunday, March 5, 2023 | (2023-03-05)
 //  Copyright:          N/A
@@ -21,7 +21,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Longest Substring Without Repeating Characters problem methods
     /// </summary>
-    internal static class LongestSubstringWithoutRepeatStatic
+    internal static class Problem3
     {
         /// <summary>
         /// Solution for Longest Substring Without Repeating Characters problem
@@ -66,5 +66,5 @@ namespace LeetCodeProject
 
         }//end LengthOfLongestSubstring()
 
-    }//end LongestSubstringWithoutRepeatStatic class
+    }//end Problem3 class
 }

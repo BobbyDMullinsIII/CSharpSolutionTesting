@@ -1,8 +1,8 @@
 ﻿/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //  Solution/Project:   LeetCodeSolution/LeetCodeProject
-//  File Name:          ContainerWithMostWaterStatic.cs
-//  Description:        ContainerWithMostWaterStatic class for testing solutions to the Container With Most Water problem
+//  File Name:          Problem11.cs
+//  Description:        Problem11 class for testing solutions to the Container With Most Water problem
 //  Authors:            Bobby Mullins
 //  Created:            Saturday, March 11 2023 | (2023-03-11)
 //  Copyright:          N/A
@@ -20,7 +20,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Container With Most Water problem methods
     /// </summary>
-    internal static class ContainerWithMostWaterStatic
+    internal static class Problem11
     {
         /// <summary>
         /// Brute force solution for Container With Most Water problem problem
@@ -91,5 +91,5 @@ namespace LeetCodeProject
 
         }//end MaxAreaEfficient()
 
-    }//end ContainerWithMostWaterStatic class
+    }//end Problem11 class
 }

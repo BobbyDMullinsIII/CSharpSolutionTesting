@@ -1,8 +1,8 @@
 ﻿///////////////////////////////////////////////////////////////////////////////////////
 //
 //  Solution/Project:   LeetCodeSolution/LeetCodeProject
-//  File Name:          MedianTwoSortedArraysStatic.cs
-//  Description:        MedianTwoSortedArraysStatic class for testing solutions to the Median of Two Sorted Arrays problem
+//  File Name:          Problem4.cs
+//  Description:        Problem4 class for testing solutions to the Median of Two Sorted Arrays problem
 //  Authors:            Bobby Mullins
 //  Created:            Friday, February 25, 2023 | (2023-02-25)
 //  Copyright:          N/A
@@ -20,7 +20,7 @@ namespace CSharpSolutionTestingProject
     /// <summary>
     ///  Class for Median of Two Sorted Arrays problem methods
     /// </summary>
-    internal class MedianTwoSortedArraysStatic
+    internal class Problem4
     {
         /// <summary>
         /// Solution for Median of Two Sorted Arrays problem
@@ -65,5 +65,5 @@ namespace CSharpSolutionTestingProject
 
         }//end FindMedianSortedArrays()
 
-    }//end MedianTwoSortedArraysStatic class
+    }//end Problem4 class
 }

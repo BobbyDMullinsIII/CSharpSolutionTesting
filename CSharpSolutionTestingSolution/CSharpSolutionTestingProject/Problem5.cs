@@ -1,8 +1,8 @@
 ﻿/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //  Solution/Project:   LeetCodeSolution/LeetCodeProject
-//  File Name:          LongestPalindromicSubstringStatic.cs
-//  Description:        LongestPalindromicSubstringStatic class for testing solutions to the Longest Palindromic Substring problem
+//  File Name:          Problem5.cs
+//  Description:        Problem5 class for testing solutions to the Longest Palindromic Substring problem
 //  Authors:            Bobby Mullins
 //  Created:            Sunday, March 5 2023 | (2023-03-05)
 //  Copyright:          N/A
@@ -20,7 +20,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Longest Palindromic Substring problem methods
     /// </summary>
-    internal static class LongestPalindromicSubstringStatic
+    internal static class Problem5
     {
         /// <summary>
         /// Solution for Longest Palindromic Substring problem
@@ -39,5 +39,5 @@ namespace LeetCodeProject
 
         }//end LongestPalindrome()
 
-    }//end LongestPalindromicSubstringStatic class
+    }//end Problem5 class
 }

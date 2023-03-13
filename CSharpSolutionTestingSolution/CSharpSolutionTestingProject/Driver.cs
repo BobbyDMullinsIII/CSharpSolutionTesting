@@ -39,7 +39,7 @@ namespace CSharpSolutionTestingProject
 
             //Execute solution
             //returnArray = TwoSumStatic.TwoSumBruteForce(nums, target); //Brute force method
-            returnArray = TwoSumStatic.TwoSumEfficient(nums, target); //More efficient method
+            returnArray = Problem1.TwoSumEfficient(nums, target); //More efficient method
 
             //Solution printed out to console
             returnArray.ToList().ForEach(i => Console.WriteLine(i.ToString()));
@@ -55,7 +55,7 @@ namespace CSharpSolutionTestingProject
             int substrLength;
 
             //Execute solution
-            substrLength = LongestSubstringWithoutRepeatStatic.LengthOfLongestSubstring(s);
+            substrLength = Problem3.LengthOfLongestSubstring(s);
 
             //Solution printed out to console
             Console.WriteLine(substrLength);
@@ -72,7 +72,7 @@ namespace CSharpSolutionTestingProject
             double median;
 
             //Execute solution
-            median = MedianTwoSortedArraysStatic.FindMedianSortedArrays(nums1, nums2);
+            median = Problem4.FindMedianSortedArrays(nums1, nums2);
 
             //Solution printed out to console
             Console.WriteLine(median);
@@ -90,7 +90,7 @@ namespace CSharpSolutionTestingProject
             string converted;
 
             //Execute solution
-            converted = ZigzagConversionStatic.Convert(s, numRows);
+            converted = Problem6.Convert(s, numRows);
 
             //Solution printed out to console
             Console.WriteLine(converted);
@@ -107,7 +107,7 @@ namespace CSharpSolutionTestingProject
 
             //Execute Solution
             //reversedNumber = Reverse32BitIntegerStatic.ReverseSimple(x); //Simpler solutioin
-            reversedNumber = Reverse32BitIntegerStatic.ReverseFasterSmaller(x);//Slightly faster and more space efficient solution
+            reversedNumber = Problem7.ReverseFasterSmaller(x);//Slightly faster and more space efficient solution
 
             //Solution printed out to console
             Console.WriteLine(reversedNumber);
@@ -123,7 +123,7 @@ namespace CSharpSolutionTestingProject
             int newInt;
 
             //Execute Solution
-            newInt = StringToIntegerAtoiStatic.MyAtoi(s);
+            newInt = Problem8.MyAtoi(s);
 
             //Solution printed out to console
             Console.WriteLine(newInt);
@@ -139,7 +139,7 @@ namespace CSharpSolutionTestingProject
             bool isPalindrome;
 
             //Execute Solution
-            isPalindrome = PalindromeNumber.IsPalindrome(x);
+            isPalindrome = Problem9.IsPalindrome(x);
 
             //Solution printed out to console
             Console.WriteLine(isPalindrome);
@@ -156,7 +156,7 @@ namespace CSharpSolutionTestingProject
 
             //Execute Solution
             //maxArea = ContainerWithMostWaterStatic.MaxAreaBruteForce(height); //Brute force method
-            maxArea = ContainerWithMostWaterStatic.MaxAreaEfficient(height); //More efficient method
+            maxArea = Problem11.MaxAreaEfficient(height); //More efficient method
 
             //Solution printed out to console
             Console.WriteLine(maxArea);

@@ -1,8 +1,8 @@
 ﻿/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //  Solution/Project:   LeetCodeSolution/LeetCodeProject
-//  File Name:          Reverse32BitIntegerStatic.cs
-//  Description:        Reverse32BitIntegerStatic class for testing solutions to the Reverse Integer class problem
+//  File Name:          Problem7.cs
+//  Description:        Problem7 class for testing solutions to the Reverse Integer class problem
 //  Authors:            Bobby Mullins
 //  Created:            Wednesday, March 1, 2023 | (2023-03-01)
 //  Copyright:          N/A
@@ -21,7 +21,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Reverse Integer problem methods
     /// </summary>
-    internal static class Reverse32BitIntegerStatic
+    internal static class Problem7
     {
         /// <summary>
         /// Simple solution for Reverse Integer problem
@@ -96,7 +96,8 @@ namespace LeetCodeProject
             {
                 return 0;
             }
-        }
 
-    }//end Reverse32BitIntegerStatic class
+        }//end ReverseFasterSmaller()
+
+    }//end Problem7 class
 }

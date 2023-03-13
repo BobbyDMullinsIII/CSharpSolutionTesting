@@ -1,8 +1,8 @@
 ﻿/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //  Solution/Project:   LeetCodeSolution/LeetCodeProject
-//  File Name:          PalindromeNumber.cs
-//  Description:        PalindromeNumber class for testing solutions to the Palindrome Number problem
+//  File Name:          Problem9.cs
+//  Description:        Problem9 class for testing solutions to the Palindrome Number problem
 //  Authors:            Bobby Mullins
 //  Created:            Saturday, March 4, 2023 | (2023-03-04)
 //  Copyright:          N/A
@@ -20,7 +20,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Palindrome Number problem methods
     /// </summary>
-    internal static class PalindromeNumber
+    internal static class Problem9
     {
         /// <summary>
         /// Solution for Palindrome Number problem
@@ -54,5 +54,5 @@ namespace LeetCodeProject
 
         }//end IsPalindrome()
 
-    }//end PalindromeNumber class
+    }//end Problem9 class
 }

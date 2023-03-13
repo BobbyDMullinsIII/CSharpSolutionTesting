@@ -1,8 +1,8 @@
 ﻿/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //  Solution/Project:   LeetCodeSolution/LeetCodeProject
-//  File Name:          AddTwoNumbersStatic.cs
-//  Description:        AddTwoNumbersStatic class for testing solutions to the Add Two Numbers problem
+//  File Name:          Problem2.cs
+//  Description:        Problem2 class for testing solutions to the Add Two Numbers problem
 //  Authors:            Bobby Mullins
 //  Created:            Wednesday, March 1, 2023 | (2023-03-01)
 //  Copyright:          N/A
@@ -20,7 +20,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Add Two Numbers problem methods
     /// </summary>
-    internal static class AddTwoNumbersStatic
+    internal static class Problem2
     {
         /// <summary>
         /// Solution for AddTwoNumbers problem
@@ -40,7 +40,7 @@ namespace LeetCodeProject
 
         }//end AddTwoNumbers
 
-    }//end AddTwoNumbersStatic class
+    }//end Problem2 class
 
     //Definition for singly-linked list. (Provided by LeetCode)
     public class ListNode

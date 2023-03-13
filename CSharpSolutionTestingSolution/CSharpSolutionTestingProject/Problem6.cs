@@ -1,8 +1,8 @@
 ﻿/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //  Solution/Project:   LeetCodeSolution/LeetCodeProject
-//  File Name:          ZigzagConversionStatic.cs
-//  Description:        ZigzagConversionStatic class for testing solutions to the Zigzag Conversion problem
+//  File Name:          Problem6.cs
+//  Description:        Problem6 class for testing solutions to the Zigzag Conversion problem
 //  Authors:            Bobby Mullins
 //  Created:            Sunday, March 5 2023 | (2023-03-05)
 //  Copyright:          N/A
@@ -21,7 +21,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Zizzag Conversion problem methods
     /// </summary>
-    internal static class ZigzagConversionStatic
+    internal static class Problem6
     {
         /// <summary>
         /// Solution for Zigzag Conversion problem
@@ -86,5 +86,5 @@ namespace LeetCodeProject
 
 
 
-    }//end ZigzagConversionStatic() class
+    }//end Problem6() class
 }
