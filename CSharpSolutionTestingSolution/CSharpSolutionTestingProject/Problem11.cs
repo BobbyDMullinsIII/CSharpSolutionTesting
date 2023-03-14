@@ -20,7 +20,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Container With Most Water problem methods
     /// </summary>
-    internal static class Problem11
+    internal class Problem11
     {
         /// <summary>
         /// Brute force solution for Container With Most Water problem

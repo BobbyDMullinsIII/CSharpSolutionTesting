@@ -20,13 +20,13 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Palindrome Number problem methods
     /// </summary>
-    internal static class Problem9
+    internal class Problem9
     {
         /// <summary>
         /// Solution for Palindrome Number problem
         /// </summary>
         /// <param name="x">input integer to check if palindrome</param>
-        /// <returns>whether or not 'x' is a palindrome number</returns>
+        /// <returns>whether 'x' is a palindrome number</returns>
         public static bool IsPalindrome(int x)
         {
             int n = x;

@@ -21,7 +21,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Reverse Integer problem methods
     /// </summary>
-    internal static class Problem7
+    internal class Problem7
     {
         /// <summary>
         /// Simple solution for Reverse Integer problem
@@ -42,14 +42,14 @@ namespace LeetCodeProject
 
             charList.Reverse(); //Reverse number
 
-            //Adds negative sign back in if number ws negative
+            //Adds negative sign back in if number is negative
             if (x < 0)
             {
                 charList.Insert(0, '-');
             }
 
             //Check if number is valid and did not overflow or underflow
-            if (int.TryParse(String.Concat(charList), out int reverseInt) == true)
+            if (int.TryParse(string.Concat(charList), out int reverseInt) == true)
             {
                 return reverseInt;
             }

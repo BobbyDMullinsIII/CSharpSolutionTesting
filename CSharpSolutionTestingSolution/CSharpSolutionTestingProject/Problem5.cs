@@ -20,7 +20,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Longest Palindromic Substring problem methods
     /// </summary>
-    internal static class Problem5
+    internal class Problem5
     {
         /// <summary>
         /// Solution for Longest Palindromic Substring problem

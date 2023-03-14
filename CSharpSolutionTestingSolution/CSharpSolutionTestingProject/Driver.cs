@@ -38,7 +38,7 @@ namespace CSharpSolutionTestingProject
             int[] returnArray;
 
             //Execute solution
-            //returnArray = TwoSumStatic.TwoSumBruteForce(nums, target); //Brute force method
+            //returnArray = Problem1.TwoSumBruteForce(nums, target); //Brute force method
             returnArray = Problem1.TwoSumEfficient(nums, target); //More efficient method
 
             //Solution printed out to console
@@ -69,13 +69,13 @@ namespace CSharpSolutionTestingProject
         {
             //Main variables
             string s = "abcabcbb";
-            int substrLength;
+            int substringLength;
 
             //Execute solution
-            substrLength = Problem3.LengthOfLongestSubstring(s);
+            substringLength = Problem3.LengthOfLongestSubstring(s);
 
             //Solution printed out to console
-            Console.WriteLine(substrLength);
+            Console.WriteLine(substringLength);
 
         }//end RunProblem3()
 
@@ -84,8 +84,8 @@ namespace CSharpSolutionTestingProject
         public static void RunProblem4()
         {
             //Main variables
-            int[] nums1 = new int[] { 1, 2 };
-            int[] nums2 = new int[] { 3, 4 };
+            int[] nums1 = new int[] { 1, 3 };
+            int[] nums2 = new int[] { 2 };
             double median;
 
             //Execute solution
@@ -100,7 +100,6 @@ namespace CSharpSolutionTestingProject
         //Method for running LongestPalindromicSubstring solution
         public static void RunProblem5()
         {
-
             //Main variables
             string s = "babad";
             string LPS;
@@ -139,7 +138,7 @@ namespace CSharpSolutionTestingProject
             int reversedNumber;
 
             //Execute solution
-            //reversedNumber = Reverse32BitIntegerStatic.ReverseSimple(x); //Simpler solutioin
+            //reversedNumber = Problem7.ReverseSimple(x); //Simpler solution
             reversedNumber = Problem7.ReverseFasterSmaller(x);//Slightly faster and more space efficient solution
 
             //Solution printed out to console
@@ -152,7 +151,7 @@ namespace CSharpSolutionTestingProject
         public static void RunProblem8()
         {
             //Main variables
-            string s = "4193 with words";
+            string s = "42";
             int newInt;
 
             //Execute solution
@@ -206,7 +205,7 @@ namespace CSharpSolutionTestingProject
             int maxArea;
 
             //Execute Solution
-            //maxArea = ContainerWithMostWaterStatic.MaxAreaBruteForce(height); //Brute force method
+            //maxArea = Problem11.MaxAreaBruteForce(height); //Brute force method
             maxArea = Problem11.MaxAreaEfficient(height); //More efficient method
 
             //Solution printed out to console

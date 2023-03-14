@@ -27,13 +27,13 @@ namespace CSharpSolutionTestingProject
         /// </summary>
         /// <param name="nums">input array to search</param>
         /// <param name="target">input target sum</param>
-        /// <returns>array of indices within nums array containing integer sum equal to target</returns>
+        /// <returns>array of indices within 'nums' array containing integer sum equal to target</returns>
         public static int[] TwoSumBruteForce(int[] nums, int target)
         {
             int i, j; //loop variables
 
             //double for loop to iterate through each value and compare to every other value
-            //(will result in comparisons with the same indices duclicating a few times)
+            //(will result in comparisons with the same indices duplicating a few times)
             for (i = 0; i < nums.Length; i++)
             {
                 for (j = 0; j < nums.Length; j++)
@@ -60,7 +60,7 @@ namespace CSharpSolutionTestingProject
         /// </summary>
         /// <param name="nums">input array to search</param>
         /// <param name="target">input target sum</param>
-        /// <returns>array of indices within nums array containing integer sum equal to target</returns>
+        /// <returns>array of indices within 'nums' array containing integer sum equal to target</returns>
         public static int[] TwoSumEfficient(int[] nums, int target)
         {
             //Variables

@@ -21,17 +21,17 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Longest Substring Without Repeating Characters problem methods
     /// </summary>
-    internal static class Problem3
+    internal class Problem3
     {
         /// <summary>
         /// Solution for Longest Substring Without Repeating Characters problem
         /// </summary>
-        /// <param name="s">input string to find subtring</param>
+        /// <param name="s">input string to find substring</param>
         /// <returns>length of the longest substring without repeating characters in 's' string</returns>
         public static int LengthOfLongestSubstring(string s)
         {
             string checkStr = "";  //String to check against for duplicate characters
-            int substrLength = -1; //Length of largest substring without repeating characters
+            int substringLength = -1; //Length of largest substring without repeating characters
 
             //Invalid Input Checks
             //If string 's' is null or empty or has a length of 0, return 0
@@ -54,15 +54,15 @@ namespace LeetCodeProject
                 //Add currently checked character in string to the checkStr
                 checkStr += s[i];
 
-                //If the current checkStr is larger than the stored substrLength, set substrLength to checkStr length
-                if (checkStr.Length > substrLength)
+                //If the current checkStr is larger than the stored substringLength, set substringLength to checkStr length
+                if (checkStr.Length > substringLength)
                 {
-                    substrLength = checkStr.Length;
+                    substringLength = checkStr.Length;
                 }
             }
 
             //Return final max substring without repeating characters length
-            return substrLength;
+            return substringLength;
 
         }//end LengthOfLongestSubstring()
 

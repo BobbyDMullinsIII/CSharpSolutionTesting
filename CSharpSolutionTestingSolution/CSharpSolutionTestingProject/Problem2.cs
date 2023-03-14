@@ -20,7 +20,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Add Two Numbers problem methods
     /// </summary>
-    internal static class Problem2
+    internal class Problem2
     {
         /// <summary>
         /// Solution for AddTwoNumbers problem

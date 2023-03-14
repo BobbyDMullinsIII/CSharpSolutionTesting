@@ -20,7 +20,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Regular Expression Matching problem methods
     /// </summary>
-    internal static class Problem10
+    internal class Problem10
     {
         /// <summary>
         /// Solution for Regular Expression Matching problem

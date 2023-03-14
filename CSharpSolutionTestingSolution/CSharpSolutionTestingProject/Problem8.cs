@@ -20,7 +20,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for String To Integer (Atoi) problem methods
     /// </summary>
-    internal static class Problem8
+    internal class Problem8
     {
         /// <summary>
         /// Solution for String To Integer (Atoi) problem
@@ -54,7 +54,7 @@ namespace LeetCodeProject
             if (char.IsDigit(s[0]) == false && s[pointer] != '-' && s[pointer] != '+')
             { return 0; }
 
-            //Increments pointer forward if a plus or negative exits
+            //Increments pointer forward if a plus or negative exists
             if (s[pointer] == '-' || s[pointer] == '+')
             {
                 //Make 'numString' start with negative sign is in front of number if within 's'

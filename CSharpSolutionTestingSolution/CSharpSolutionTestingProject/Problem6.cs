@@ -21,7 +21,7 @@ namespace LeetCodeProject
     /// <summary>
     ///  Class for Zizzag Conversion problem methods
     /// </summary>
-    internal static class Problem6
+    internal class Problem6
     {
         /// <summary>
         /// Solution for Zigzag Conversion problem
@@ -83,8 +83,6 @@ namespace LeetCodeProject
             return new string(charArray);
 
         }//end Convert()
-
-
 
     }//end Problem6() class
 }
