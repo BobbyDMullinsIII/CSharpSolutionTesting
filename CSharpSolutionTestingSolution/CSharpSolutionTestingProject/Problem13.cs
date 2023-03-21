@@ -22,7 +22,7 @@ namespace LeetCodeProject
         /// Solution for Roman to Integer problem
         /// </summary>
         /// <param name="s">string of roman numbers to convert to integer</param>
-        /// <returns>"s" roman numerals converted to an integer</returns>
+        /// <returns>'s' roman numerals converted to an integer</returns>
         public static int RomanToInt(string s)
         {
             int finalInt = 0; //Final converted integer to return

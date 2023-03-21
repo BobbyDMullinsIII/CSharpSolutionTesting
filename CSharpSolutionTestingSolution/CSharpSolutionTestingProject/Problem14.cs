@@ -28,7 +28,7 @@ namespace LeetCodeProject
         {
             int i = 0; //Counting variable for while loop
 
-            //Sort array and find smallest length from beginning and end strings
+            //Sort array and find the smallest length from beginning and end strings
             Array.Sort(strs);
             int end = Math.Min(strs[0].Length, strs[^1].Length);
 

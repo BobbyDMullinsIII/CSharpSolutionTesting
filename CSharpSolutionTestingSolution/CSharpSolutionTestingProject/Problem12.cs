@@ -21,7 +21,7 @@ namespace LeetCodeProject
         /// <summary>
         /// Solution for Integer to Roman problem
         /// </summary>
-        /// <param name="num">integer to convert to roman numberals in string format</param>
+        /// <param name="num">integer to convert to roman numerals in string format</param>
         /// <returns>'num' integer in roman numeral format</returns>
         public static string IntToRoman(int num)
         {
