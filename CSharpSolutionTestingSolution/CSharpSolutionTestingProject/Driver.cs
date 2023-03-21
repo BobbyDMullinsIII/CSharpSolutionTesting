@@ -25,7 +25,7 @@ namespace CSharpSolutionTestingProject
         [STAThread]
         static void Main()
         {
-            RunProblem11();
+            RunProblem14();
         }
 
         //Problem 1
@@ -212,6 +212,54 @@ namespace CSharpSolutionTestingProject
             Console.WriteLine(maxArea);
 
         }//end RunProblem11()
+
+        //Problem 12
+        //Method for running IntegertoRoman solution
+        public static void RunProblem12()
+        {
+            //Main variables
+            int num = 3;
+            string romanNumeral;
+
+            //Execute Solution
+            romanNumeral = Problem12.IntToRoman(num);
+
+            //Solution printed out to console
+            Console.WriteLine(romanNumeral);
+
+        }//end RunProblem12()
+
+        //Problem 13
+        //Method for running RomantoInteger solution
+        public static void RunProblem13()
+        {
+            //Main variables
+            string s = "MCMXCIV";
+            int convertInt;
+
+            //Execute Solution
+            convertInt = Problem13.RomanToInt(s);
+
+            //Solution printed out to console
+            Console.WriteLine(convertInt);
+
+        }//end RunProblem13()
+
+        //Problem 14
+        //Method for running ContainerWithMostWater solution
+        public static void RunProblem14()
+        {
+            //Main variables
+            string[] strs = new string[] { "flower", "flow", "flight" };
+            string commonPrefix;
+
+            //Execute Solution
+            commonPrefix = Problem14.LongestCommonPrefix(strs);
+
+            //Solution printed out to console
+            Console.WriteLine(commonPrefix);
+
+        }//end RunProblem14()
 
     }//end Driver class
 
