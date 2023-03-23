@@ -178,7 +178,6 @@ namespace CSharpSolutionTestingProject
 
         }//end RunProblem9()
 
-
         //Problem 10
         //Method for running RegularExpressionMatching solution
         public static void RunProblem10()
