@@ -44,11 +44,13 @@ namespace LeetCodeProject
 
                 if(char.IsDigit(s[1]) == false)
                 { return 0; }
-            }
 
-            //If the first character is not a digit, negative sign, or positive sign, return 0
-            if (char.IsDigit(s[0]) == false && s[pointer] != '-' && s[pointer] != '+')
-            { return 0; }
+                //If the first character is not a negative sign or positive sign, return 0
+                if (s[0] != '-' && s[0] != '+')
+                {
+                    return 0;
+                }
+            }
 
             //Increments pointer forward if a plus or negative exists
             if (s[pointer] == '-' || s[pointer] == '+')
