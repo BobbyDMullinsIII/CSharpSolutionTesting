@@ -25,7 +25,7 @@ namespace CSharpSolutionTestingProject
         [STAThread]
         static void Main()
         {
-            RunProblem14();
+            RunProblem15();
         }
 
         //Problem 1
@@ -259,6 +259,46 @@ namespace CSharpSolutionTestingProject
             Console.WriteLine(commonPrefix);
 
         }//end RunProblem14()
+
+        //Problem 15
+        //Method for running ThreeSum solution
+        public static void RunProblem15()
+        {
+            //Main variables
+            int[] nums = new int[] { -1, 0, 1, 2, -1, -4 };
+            IList<IList<int>> triplets;
+
+            //Execute Solution
+            triplets = Problem15.ThreeSum(nums);
+
+            //Solution printed out to console
+            foreach (var sublist in triplets)
+            {
+                foreach (var obj in sublist)
+                {
+                    Console.Write(obj + ",");
+                }
+                Console.WriteLine();
+            }
+
+        }//end RunProblem15()
+
+        //Problem 16
+        //Method for running ThreeSumClosest solution
+        public static void RunProblem16()
+        {
+            //Main variables
+            int[] nums = new int[] { -1, 2, 1, -4 };
+            int target = 2;
+            int closeSum;
+
+            //Execute Solution
+            closeSum = Problem16.ThreeSumClosest(nums, target);
+
+            //Solution printed out to console
+            Console.WriteLine(closeSum);
+
+        }//end RunProblem16()
 
     }//end Driver class
 

@@ -26,20 +26,18 @@ namespace CSharpSolutionTestingProject
         /// <returns>array of indices within 'nums' array containing integer sum equal to target</returns>
         public static int[] TwoSumBruteForce(int[] nums, int target)
         {
-            int i, j; //loop variables
-
-            //double for loop to iterate through each value and compare to every other value
+            //Double for loop to iterate through each value and compare to every other value
             //(will result in comparisons with the same indices duplicating a few times)
-            for (i = 0; i < nums.Length; i++)
+            for (int i = 0; i < nums.Length; i++)
             {
-                for (j = 0; j < nums.Length; j++)
+                for (int j = 0; j < nums.Length; j++)
                 {
                     if (i != j) //do not compare if same index
                     {
                         //Check if equal to target
                         if (nums[i] + nums[j] == target)
                         {
-                            //returns indices if two separate indices to equal target are found
+                            //Returns indices if two separate indices to equal target are found
                             return new int[] { i, j };
                         }
                     }
