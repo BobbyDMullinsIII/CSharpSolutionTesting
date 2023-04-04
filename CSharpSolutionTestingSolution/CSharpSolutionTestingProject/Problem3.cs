@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Longest Substring Without Repeating Characters problem methods
     /// </summary>
-    internal class Problem3
+    public class Problem3
     {
         /// <summary>
         /// Solution for Longest Substring Without Repeating Characters problem

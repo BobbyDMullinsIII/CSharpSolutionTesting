@@ -12,7 +12,7 @@
 using LeetCodeProject;
 using System;
 
-namespace CSharpSolutionTestingProject
+namespace LeetCodeProject
 {
     /// <summary>
     ///  Driver class for starting program
@@ -269,7 +269,8 @@ namespace CSharpSolutionTestingProject
             IList<IList<int>> triplets;
 
             //Execute Solution
-            triplets = Problem15.ThreeSum(nums);
+            //triplets = Problem15.ThreeSumSlow(nums);
+            triplets = Problem15.ThreeSumFast(nums);
 
             //Solution printed out to console
             foreach (var sublist in triplets)

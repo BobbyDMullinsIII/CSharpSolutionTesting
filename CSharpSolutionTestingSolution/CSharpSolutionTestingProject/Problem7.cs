@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Reverse Integer problem methods
     /// </summary>
-    internal class Problem7
+    public class Problem7
     {
         /// <summary>
         /// Simple solution for Reverse Integer problem

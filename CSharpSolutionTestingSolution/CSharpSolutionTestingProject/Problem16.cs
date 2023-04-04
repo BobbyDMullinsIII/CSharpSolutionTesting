@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Three Sum Closest problem methods
     /// </summary>
-    internal class Problem16
+    public class Problem16
     {
         /// <summary>
         /// Solution for Three Sum problem

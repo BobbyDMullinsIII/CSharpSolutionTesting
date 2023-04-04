@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Valid Parentheses problem methods
     /// </summary>
-    internal class Problem20
+    public class Problem20
     {
         /// <summary>
         /// Solution for Valid Parentheses problem

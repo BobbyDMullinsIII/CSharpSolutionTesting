@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for String To Integer (Atoi) problem methods
     /// </summary>
-    internal class Problem8
+    public class Problem8
     {
         /// <summary>
         /// Solution for String To Integer (Atoi) problem

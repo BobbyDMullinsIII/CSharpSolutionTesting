@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
-namespace CSharpSolutionTestingProject
+namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Median of Two Sorted Arrays problem methods
     /// </summary>
-    internal class Problem4
+    public class Problem4
     {
         /// <summary>
         /// Solution for Median of Two Sorted Arrays problem

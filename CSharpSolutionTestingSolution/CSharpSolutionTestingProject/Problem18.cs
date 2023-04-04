@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Four Sum problem methods
     /// </summary>
-    internal class Problem18
+    public class Problem18
     {
         /// <summary>
         /// Solution for Four Sum problem

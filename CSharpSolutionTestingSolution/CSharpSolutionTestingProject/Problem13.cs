@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Roman to Integer problem methods
     /// </summary>
-    internal class Problem13
+    public class Problem13
     {
         /// <summary>
         /// Solution for Roman to Integer problem

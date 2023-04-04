@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Generate Parentheses problem methods
     /// </summary>
-    internal class Problem22
+    public class Problem22
     {
         /// <summary>
         /// Solution for Generate Parentheses problem

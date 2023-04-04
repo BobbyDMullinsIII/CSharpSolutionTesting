@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Three Sum problem methods
     /// </summary>
-    internal class Problem21
+    public class Problem21
     {
         /// <summary>
         /// Solution for Merge Two Sorted Lists problem

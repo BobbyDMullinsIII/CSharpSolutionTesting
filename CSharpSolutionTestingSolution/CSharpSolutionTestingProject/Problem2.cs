@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Add Two Numbers problem methods
     /// </summary>
-    internal class Problem2
+    public class Problem2
     {
         /// <summary>
         /// Solution for AddTwoNumbers problem

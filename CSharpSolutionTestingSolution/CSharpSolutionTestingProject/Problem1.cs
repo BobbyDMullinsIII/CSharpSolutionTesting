@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
-namespace CSharpSolutionTestingProject
+namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Two Sum problem methods
     /// </summary>
-    internal class Problem1
+    public class Problem1
     {
         /// <summary>
         /// Brute force solution for TwoSum problem

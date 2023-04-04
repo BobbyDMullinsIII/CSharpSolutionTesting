@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Letter Combinations of a Phone Number problem methods
     /// </summary>
-    internal class Problem17
+    public class Problem17
     {
         /// <summary>
         /// Solution for Letter Combinations of a Phone Number

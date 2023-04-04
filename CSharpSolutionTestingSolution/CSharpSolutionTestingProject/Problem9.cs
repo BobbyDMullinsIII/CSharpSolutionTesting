@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Palindrome Number problem methods
     /// </summary>
-    internal class Problem9
+    public class Problem9
     {
         /// <summary>
         /// Solution for Palindrome Number problem

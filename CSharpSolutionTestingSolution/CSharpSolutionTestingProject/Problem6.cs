@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Zizzag Conversion problem methods
     /// </summary>
-    internal class Problem6
+    public class Problem6
     {
         /// <summary>
         /// Solution for Zigzag Conversion problem

@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Remove Nth Node From End of List problem methods
     /// </summary>
-    internal class Problem19
+    public class Problem19
     {
         /// <summary>
         /// Solution for Remove Nth Node From End of List problem

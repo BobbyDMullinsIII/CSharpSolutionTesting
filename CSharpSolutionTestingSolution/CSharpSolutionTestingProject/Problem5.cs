@@ -9,14 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Longest Palindromic Substring problem methods
     /// </summary>
-    internal class Problem5
+    public class Problem5
     {
         /// <summary>
         /// Solution for Longest Palindromic Substring problem

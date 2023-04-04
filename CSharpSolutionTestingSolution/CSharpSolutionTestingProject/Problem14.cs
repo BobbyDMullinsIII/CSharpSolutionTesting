@@ -9,15 +9,12 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System;
-using System.Drawing;
-
 namespace LeetCodeProject
 {
     /// <summary>
     ///  Class for Longest Common Prefix problem methods
     /// </summary>
-    internal class Problem14
+    public class Problem14
     {
         /// <summary>
         /// Solution for Longest Common Prefix problem
