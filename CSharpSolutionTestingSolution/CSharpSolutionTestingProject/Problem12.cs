@@ -16,6 +16,22 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem12
     {
+        //Problem 12
+        //Method for running IntegertoRoman solution
+        public static void RunProblem12()
+        {
+            //Main variables
+            int num = 3;
+            string romanNumeral;
+
+            //Execute Solution
+            romanNumeral = Problem12.IntToRoman(num);
+
+            //Solution printed out to console
+            Console.WriteLine(romanNumeral);
+
+        }//end RunProblem12()
+
         /// <summary>
         /// Solution for Integer to Roman problem
         /// </summary>

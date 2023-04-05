@@ -16,6 +16,22 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem8
     {
+        //Problem 8
+        //Method for running my atoi solution
+        public static void RunProblem8()
+        {
+            //Main variables
+            string s = "42";
+            int newInt;
+
+            //Execute solution
+            newInt = Problem8.MyAtoi(s);
+
+            //Solution printed out to console
+            Console.WriteLine(newInt);
+
+        }//end RunProblem8()
+
         /// <summary>
         /// Solution for String To Integer (Atoi) problem
         /// </summary>

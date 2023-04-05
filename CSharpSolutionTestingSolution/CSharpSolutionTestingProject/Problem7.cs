@@ -16,6 +16,23 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem7
     {
+        //Problem 7
+        //Method for running MedianTwoSortedArrays solution
+        public static void RunProblem7()
+        {
+            //Main variables
+            int x = 123;
+            int reversedNumber;
+
+            //Execute solution
+            //reversedNumber = Problem7.ReverseSimple(x); //Simpler solution
+            reversedNumber = Problem7.ReverseFasterSmaller(x);//Slightly faster and more space efficient solution
+
+            //Solution printed out to console
+            Console.WriteLine(reversedNumber);
+
+        }//end RunProblem7()
+
         /// <summary>
         /// Simple solution for Reverse Integer problem
         /// </summary>

@@ -16,6 +16,23 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem6
     {
+        //Problem 6
+        //Method for running ZigzagConversion solution
+        public static void RunProblem6()
+        {
+            //Main variables
+            string s = "PAYPALISHIRING";
+            int numRows = 3;
+            string converted;
+
+            //Execute solution
+            converted = Problem6.Convert(s, numRows);
+
+            //Solution printed out to console
+            Console.WriteLine(converted);
+
+        }//end RunProblem6
+
         /// <summary>
         /// Solution for Zigzag Conversion problem
         /// </summary>

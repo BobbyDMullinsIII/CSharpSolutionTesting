@@ -16,6 +16,22 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem14
     {
+        //Problem 14
+        //Method for running ContainerWithMostWater solution
+        public static void RunProblem14()
+        {
+            //Main variables
+            string[] strs = new string[] { "flower", "flow", "flight" };
+            string commonPrefix;
+
+            //Execute Solution
+            commonPrefix = Problem14.LongestCommonPrefix(strs);
+
+            //Solution printed out to console
+            Console.WriteLine(commonPrefix);
+
+        }//end RunProblem14()
+
         /// <summary>
         /// Solution for Longest Common Prefix problem
         /// </summary>

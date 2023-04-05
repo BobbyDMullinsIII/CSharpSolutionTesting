@@ -16,6 +16,24 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem1
     {
+        //Problem 1
+        //Method for running TwoSum solution
+        public static void RunProblem1()
+        {
+            //Main variables
+            int[] nums = new int[] { 2, 7, 11, 15 };
+            int target = 9;
+            int[] returnArray;
+
+            //Execute solution
+            //returnArray = Problem1.TwoSumBruteForce(nums, target); //Brute force method
+            returnArray = Problem1.TwoSumEfficient(nums, target); //More efficient method
+
+            //Solution printed out to console
+            returnArray.ToList().ForEach(i => Console.WriteLine(i.ToString()));
+
+        }//end RunProblem1()
+
         /// <summary>
         /// Brute force solution for TwoSum problem
         /// </summary>

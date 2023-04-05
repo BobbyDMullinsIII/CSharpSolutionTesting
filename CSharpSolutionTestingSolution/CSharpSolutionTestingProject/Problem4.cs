@@ -16,6 +16,23 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem4
     {
+        //Problem 4
+        //Method for running MedianTwoSortedArrays solution
+        public static void RunProblem4()
+        {
+            //Main variables
+            int[] nums1 = new int[] { 1, 3 };
+            int[] nums2 = new int[] { 2 };
+            double median;
+
+            //Execute solution
+            median = Problem4.FindMedianSortedArrays(nums1, nums2);
+
+            //Solution printed out to console
+            Console.WriteLine(median);
+
+        }//end RunProblem4()
+
         /// <summary>
         /// Solution for Median of Two Sorted Arrays problem
         /// </summary>

@@ -16,6 +16,23 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem10
     {
+        //Problem 10
+        //Method for running RegularExpressionMatching solution
+        public static void RunProblem10()
+        {
+            //Main variables
+            string s = "aa";
+            string p = "a";
+            bool matches;
+
+            //Execute solution
+            matches = Problem10.IsMatch(s, p);
+
+            //Solution printed out to console
+            Console.WriteLine(matches);
+
+        }//end RunProblem10()
+
         /// <summary>
         /// Solution for Regular Expression Matching problem
         /// </summary>

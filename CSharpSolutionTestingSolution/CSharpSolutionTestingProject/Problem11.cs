@@ -16,6 +16,23 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem11
     {
+        //Problem 11
+        //Method for running ContainerWithMostWater solution
+        public static void RunProblem11()
+        {
+            //Main variables
+            int[] height = new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
+            int maxArea;
+
+            //Execute Solution
+            //maxArea = Problem11.MaxAreaBruteForce(height); //Brute force method
+            maxArea = Problem11.MaxAreaEfficient(height); //More efficient method
+
+            //Solution printed out to console
+            Console.WriteLine(maxArea);
+
+        }//end RunProblem11()
+
         /// <summary>
         /// Brute force solution for Container With Most Water problem
         /// </summary>

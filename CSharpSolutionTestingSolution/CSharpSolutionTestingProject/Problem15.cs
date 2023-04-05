@@ -16,6 +16,30 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem15
     {
+        //Problem 15
+        //Method for running ThreeSum solution
+        public static void RunProblem15()
+        {
+            //Main variables
+            int[] nums = new int[] { -1, 0, 1, 2, -1, -4 };
+            IList<IList<int>> triplets;
+
+            //Execute Solution
+            //triplets = Problem15.ThreeSumSlow(nums);
+            triplets = Problem15.ThreeSumFast(nums);
+
+            //Solution printed out to console
+            foreach (var sublist in triplets)
+            {
+                foreach (var obj in sublist)
+                {
+                    Console.Write(obj + ",");
+                }
+                Console.WriteLine();
+            }
+
+        }//end RunProblem15()
+
         /// <summary>
         /// Slow Solution for Three Sum problem
         /// </summary>

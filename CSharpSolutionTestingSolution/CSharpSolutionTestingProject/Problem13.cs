@@ -16,6 +16,22 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem13
     {
+        //Problem 13
+        //Method for running RomantoInteger solution
+        public static void RunProblem13()
+        {
+            //Main variables
+            string s = "MCMXCIV";
+            int convertInt;
+
+            //Execute Solution
+            convertInt = Problem13.RomanToInt(s);
+
+            //Solution printed out to console
+            Console.WriteLine(convertInt);
+
+        }//end RunProblem13()
+
         /// <summary>
         /// Solution for Roman to Integer problem
         /// </summary>

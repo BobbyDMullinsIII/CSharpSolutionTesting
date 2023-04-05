@@ -16,6 +16,22 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem5
     {
+        //Problem 5
+        //Method for running LongestPalindromicSubstring solution
+        public static void RunProblem5()
+        {
+            //Main variables
+            string s = "babad";
+            string LPS;
+
+            //Execute solution
+            LPS = Problem5.LongestPalindrome(s);
+
+            //Solution printed out to console
+            Console.WriteLine(LPS);
+
+        }//end RunProblem5()
+
         /// <summary>
         /// Solution for Longest Palindromic Substring problem
         /// </summary>

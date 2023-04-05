@@ -16,6 +16,23 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem16
     {
+        //Problem 16
+        //Method for running ThreeSumClosest solution
+        public static void RunProblem16()
+        {
+            //Main variables
+            int[] nums = new int[] { -1, 2, 1, -4 };
+            int target = 2;
+            int closeSum;
+
+            //Execute Solution
+            closeSum = Problem16.ThreeSumClosest(nums, target);
+
+            //Solution printed out to console
+            Console.WriteLine(closeSum);
+
+        }//end RunProblem16()
+
         /// <summary>
         /// Solution for Three Sum problem
         /// </summary>

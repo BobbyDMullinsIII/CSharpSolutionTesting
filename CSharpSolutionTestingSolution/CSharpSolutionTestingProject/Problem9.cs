@@ -16,6 +16,22 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem9
     {
+        //Problem 9
+        //Method for running PalindromeNumber solution
+        public static void RunProblem9()
+        {
+            //Main variables
+            int x = 121;
+            bool isPalindrome;
+
+            //Execute solution
+            isPalindrome = Problem9.IsPalindrome(x);
+
+            //Solution printed out to console
+            Console.WriteLine(isPalindrome);
+
+        }//end RunProblem9()
+
         /// <summary>
         /// Solution for Palindrome Number problem
         /// </summary>

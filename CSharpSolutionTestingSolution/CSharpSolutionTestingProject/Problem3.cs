@@ -16,6 +16,22 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem3
     {
+        //Problem 3
+        //Method for running LongestSubstringWithoutRepeat solution
+        public static void RunProblem3()
+        {
+            //Main variables
+            string s = "abcabcbb";
+            int substringLength;
+
+            //Execute solution
+            substringLength = Problem3.LengthOfLongestSubstring(s);
+
+            //Solution printed out to console
+            Console.WriteLine(substringLength);
+
+        }//end RunProblem3()
+
         /// <summary>
         /// Solution for Longest Substring Without Repeating Characters problem
         /// </summary>

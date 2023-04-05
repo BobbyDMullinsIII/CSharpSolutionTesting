@@ -16,6 +16,23 @@ namespace LeetCodeProject
     /// </summary>
     public class Problem2
     {
+        //Problem 2
+        //Method for running AddTwoNumbers solution
+        public static void RunProblem2()
+        {
+            //Main variables
+            ListNode l1 = new();
+            ListNode l2 = new();
+            ListNode lSum;
+
+            //Execute solution
+            lSum = Problem2.AddTwoNumbers(l1, l2);
+
+            //Solution printed out to console
+            //lSum.ToList().ForEach(i => Console.WriteLine(i.ToString()));
+
+        }//end RunProblem2()
+
         /// <summary>
         /// Solution for AddTwoNumbers problem
         /// </summary>
