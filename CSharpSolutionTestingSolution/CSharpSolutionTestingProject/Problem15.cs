@@ -113,7 +113,7 @@ namespace LeetCodeProject
         /// <returns>IList of ILists that contain all triplet combinations from 'nums' array that equal zero</returns>
         public static IList<IList<int>> ThreeSumFast(int[] nums)
         {
-            List<IList<int>> returnList = new(); //List of lists to return
+            List<List<int>> workList = new();   //Working list of triplet lists
 
             //Go through entire array (length minus two due to triplet calculation)
             for (int i = 0; i < nums.Length - 2; i++)
@@ -132,7 +132,7 @@ namespace LeetCodeProject
                     {
                         List<int> tempList = new() { x, nums[i], nums[j] };
                         tempList.Sort();
-                        returnList.Add(tempList);  
+                        workList.Add(tempList);
                     }
                     //Else, add it to the HashSet for this run
                     else
@@ -142,7 +142,13 @@ namespace LeetCodeProject
                 }
             }
 
-            //returnList = returnList.GroupBy(x => string.Join(",", x)).Select(x => x.First().ToList()).ToList();
+            workList = workList.GroupBy(x => string.Join(",", x)).Select(x => x.First().ToList()).ToList();
+
+            List<IList<int>> returnList = new(); //List of lists to return
+            foreach (List<int> l in workList)
+            {
+                returnList.Add(new List<int>() { l[0], l[1], l[2] });
+            }
 
             //Returns list of lists of triplets that equal '0'
             return returnList;

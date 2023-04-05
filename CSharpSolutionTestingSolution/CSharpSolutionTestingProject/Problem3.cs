@@ -35,7 +35,7 @@ namespace LeetCodeProject
         /// <summary>
         /// Solution for Longest Substring Without Repeating Characters problem
         /// </summary>
-        /// <param name="s">input string to find substring</param>
+        /// <param name="s">input string to find longest substring without repeating characters</param>
         /// <returns>length of the longest substring without repeating characters in 's' string</returns>
         public static int LengthOfLongestSubstring(string s)
         {
