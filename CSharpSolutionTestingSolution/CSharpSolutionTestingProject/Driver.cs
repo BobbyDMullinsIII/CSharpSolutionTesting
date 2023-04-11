@@ -24,7 +24,7 @@ namespace LeetCodeProject
         [STAThread]
         static void Main()
         {
-            Problem1.RunProblem1();
+            Problem18.RunProblem18();
 
         }//end Main()
 

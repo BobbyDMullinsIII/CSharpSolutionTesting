@@ -142,12 +142,13 @@ namespace LeetCodeProject
                 }
             }
 
+            //Makes all arrays within 'workList' distinct
             workList = workList.GroupBy(x => string.Join(",", x)).Select(x => x.First().ToList()).ToList();
 
             List<IList<int>> returnList = new(); //List of lists to return
-            foreach (List<int> l in workList)
+            foreach (List<int> list in workList)
             {
-                returnList.Add(new List<int>() { l[0], l[1], l[2] });
+                returnList.Add(new List<int>() { list[0], list[1], list[2] });
             }
 
             //Returns list of lists of triplets that equal '0'
